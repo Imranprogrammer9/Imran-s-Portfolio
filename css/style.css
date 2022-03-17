@@ -1,0 +1,431 @@
+/* Declaring & Initialization of CSS Variables */
+:root {
+  --main-bg-color: #000;
+  --main-color: #fff;
+  --margin: 0px;
+  --padding: 0px;
+  --font-family: "Poppins", sans-serif;
+  --anchor-text-color: #fff;
+  --font-size: 15px;
+  --text-transform: upperCase;
+  --icon-font-size: 25px;
+}
+/* Setting Default Margin and Padding Zero */
+body {
+  margin: var(--margin);
+  padding: var(--padding);
+  cursor: pointer;
+}
+/* Scrolling Effect */
+html {
+  scroll-behavior: smooth;
+}
+/* Header Section Styling */
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #a85374, #5f6078, #2b3f42);
+  z-index: 1000;
+}
+/* Header Logo */
+#header img {
+  width: 50px;
+  height: 50px;
+}
+/* Header Menu */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* Anchor Tag Styling */
+nav ul li a {
+  text-decoration: none;
+  color: var(--anchor-text-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  text-transform: var(--text-transform);
+  padding: 10px 30px;
+}
+/* Hover Styling */
+nav ul li a:hover {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  border-radius: 5px;
+}
+/* Header Contact */
+.contact span a {
+  color: var(--anchor-text-color);
+}
+/* Icon Styling */
+.contact span i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: var(--main-color);
+}
+/* Introduction Section Styling */
+.intro-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12%;
+}
+/* Image andd Text Container */
+.dev-intro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/* Image Container Styling */
+.intro-image {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Image Styling */
+.intro-image img {
+  width: 80%;
+  object-fit: contain;
+  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+/* Introduction Text */
+.intro-text {
+  width: 27.5%;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+/* Heading and Paragraph Margin Set To Zero */
+.intro-text h1 {
+  margin: 0px 0px;
+}
+/* Intro Span Styling */
+.intro-text span {
+  border-bottom: 1px solid var(--main-bg-color);
+}
+/* Intro P Styling */
+.intro-text p {
+  margin-bottom: 10px;
+}
+/* Get In Touch Styling */
+.get-in-touch {
+  margin-top: 18px;
+}
+/* Get In Touch Anchor Tag */
+.get-in-touch a {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #a85374, #5f6078, #2b3f42);
+  color: var(--main-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+/* Skills Section */
+.skill-section {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#skills {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 12%;
+  align-items: center;
+}
+/* Skills Section Heading and Paragrapgh Margin Set To 0*/
+.heading p,
+h2 {
+  margin: var(--margin);
+}
+.heading p {
+  color: #ac008f;
+}
+.me {
+  font-size: 30px;
+}
+/* Skill Section Heading Styling  */
+#skills .heading {
+  margin-bottom: 15px;
+}
+/* Skill Set Section Styling  */
+.skill-set {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* Skill Set Icon Styling */
+.skill-set .fa-html5 {
+  margin-right: 20px;
+  font-size: var(--icon-font-size);
+  color: #e34c26;
+}
+.skill-set .fa-css3-alt {
+  margin-right: 18px;
+  font-size: var(--icon-font-size);
+  color: #167dbe;
+}
+.skill-set .fa-js-square {
+  margin-right: 18px;
+  font-size: var(--icon-font-size);
+  color: #f7df1e;
+}
+/* Skill Set Text Styling */
+.skill-text,
+.skill-title,
+.skill-description {
+  margin: var(--margin);
+  font-size: 20px;
+}
+/* Skill Image Styling */
+.skill-image img {
+  width: 500px;
+}
+/* Projects */
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8%;
+}
+.project-heading p,
+h2 {
+  margin: var(--margin);
+  padding: var(--padding);
+  font-family: var(--font-family);
+}
+.mp {
+  color: #ac008f;
+}
+
+.mw {
+  font-size: 30px;
+  text-align: center;
+}
+.projects-details {
+  display: flex;
+  margin-top: 10px;
+}
+.project {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  border-radius: 10px;
+  position: relative;
+  margin: 5px;
+}
+.languages-used {
+  display: flex;
+  margin-left: 7px;
+}
+i.fa-brands.fa-spotify {
+  font-size: 50px;
+  color: #18d860;
+  margin-right: 10px;
+}
+.details p {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+}
+.details i {
+  margin: 5px;
+  font-size: 30px;
+}
+.details a {
+  color: black;
+}
+i.fa-brands.fa-html5 {
+  color: #e34c26;
+}
+i.fa-brands.fa-css3-alt {
+  color: #167dbe;
+}
+i.fa-brands.fa-js-square {
+  color: #f7df1e;
+}
+i.fa-solid.fa-arrow-up-right-from-square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+}
+/* Contact Section */
+.contact-section img {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  padding-top: 8%;
+}
+.contact-details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2% auto;
+  font-family: var(--font-family);
+}
+/* WhatsApp Details Styling */
+.whatsapp {
+  transition: 0.3s;
+}
+.whatsapp a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.whatsapp p {
+  color: black;
+}
+i.fab.fa-whatsapp {
+  color: #25d366;
+  font-size: 50px;
+}
+.whatsapp:hover {
+  background-color: #25d366;
+  border-radius: 10px;
+}
+.whatsapp:hover i.fab.fa-whatsapp {
+  color: white;
+}
+.whatsapp:hover p {
+  color: white;
+}
+/* GMaill Details Styling */
+.gmail {
+  transition: 0.3s;
+}
+.gmail a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.gmail p {
+  color: black;
+}
+i.fa-solid.fa-envelope {
+  color: rgb(64, 134, 244);
+  font-size: 50px;
+}
+.gmail:hover {
+  background: rgb(64, 134, 244);
+  border-radius: 10px;
+}
+.gmail:hover i.fa-solid.fa-envelope {
+  color: white;
+}
+.gmail:hover p {
+  color: white;
+}
+/* Address Details Styling */
+.address {
+  transition: 0.3s;
+}
+.address a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.address p {
+  color: black;
+}
+i.fa-solid.fa-house-chimney {
+  color: black;
+  font-size: 50px;
+}
+.address:hover {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.address:hover i.fa-solid.fa-house-chimney {
+  color: white;
+}
+.address:hover p {
+  color: white;
+}
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  font-family: var(--font-family);
+  background: var(--main-bg-color);
+}
+
+footer p {
+  margin: 15px 0px;
+  color: var(--anchor-text-color);
+  font-size: 14px;
+}
+footer span i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: var(--anchor-text-color);
+}
+
+/* Swiper CSS */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 170px;
+}
+
+/* Pagination Dots Styling */
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+.project-heading {
+  margin-bottom: 30px;
+}
