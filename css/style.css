@@ -5,7 +5,7 @@
   --margin: 0px;
   --padding: 0px;
   --font-family: "Poppins", sans-serif;
-  --anchor-text-color: #fff;
+  --anchor-text-color: rgb(255, 255, 255);
   --font-size: 15px;
   --text-transform: upperCase;
   --icon-font-size: 25px;
@@ -26,12 +26,13 @@ html {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: 65px;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #a85374, #5f6078, #2b3f42);
+  /* background-image: linear-gradient(to right, #a85374, #5f6078, #2b3f42); */
+  background-color: #000;
   z-index: 1000;
 }
 /* Header Logo */
@@ -68,6 +69,13 @@ nav ul li a:hover {
   font-size: 25px;
   margin-right: 5px;
   color: var(--main-color);
+}
+
+.tab-mob-menu {
+  display: none;
+}
+.sideMenu {
+  display: none;
 }
 /* Introduction Section Styling */
 .intro-section {
@@ -255,7 +263,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 8%;
+  padding-top: 16%;
 }
 .project-heading p,
 h2 {
@@ -489,4 +497,7 @@ body {
 }
 .project-heading {
   margin-bottom: 30px;
+}
+.openMenu {
+  transform: translateX(0) !important;
 }

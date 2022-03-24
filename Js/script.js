@@ -24,7 +24,7 @@ document.getElementById('descTypeWriterEffect').style.backgroundColor = 'black';
 document.getElementById('descTypeWriterEffect').style.color = 'white';
 document.getElementById('descTypeWriterEffect').style.paddingLeft = '5px';
 
-// Third Line
+// Second Line
 var descTypeWriterEffect1 = document.getElementById('descTypeWriterEffect1');
 var typewriterDesc1 = new Typewriter(descTypeWriterEffect1, {
     loop: true,
@@ -38,7 +38,7 @@ document.getElementById('descTypeWriterEffect1').style.paddingLeft = '5px';
 document.getElementById('descTypeWriterEffect1').style.backgroundColor = 'black';
 document.getElementById('descTypeWriterEffect1').style.color = 'white';
 
-// Fourth Line
+// Third Line
 var descTypeWriterEffect2 = document.getElementById('descTypeWriterEffect2');
 var typewriterDesc2 = new Typewriter(descTypeWriterEffect2, {
     loop: true,
@@ -51,3 +51,9 @@ document.getElementById('descTypeWriterEffect2').style.marginTop = '5px';
 document.getElementById('descTypeWriterEffect2').style.paddingLeft = '5px';
 document.getElementById('descTypeWriterEffect2').style.backgroundColor = 'black';
 document.getElementById('descTypeWriterEffect2').style.color = 'white';
+
+
+// Side Bar
+function toggleNav() {
+    document.getElementById("sideNav").classList.toggle('openMenu');
+}
