@@ -1,2 +1,6 @@
-I am a Web Developer. I am passionate in front end development skills. I love to writing code. My dream
-    is to become a fullstack developer. For Further Information, Contact Me
+I am a Web Developer. I am passionate in front end development skills. I love to writing code. My dream is to become a fullstack developer. For Further Information, Contact Me
+
+A passionate front-end web developer who uses the front technologies to make beautiful, responsive, and eye-catching designs.
+
+Technologies on I work
+HTML | CSS | JavaScript
