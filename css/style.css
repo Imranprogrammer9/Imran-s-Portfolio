@@ -109,7 +109,7 @@ nav ul li a:hover {
   border-radius: 50%;
 } */
 
-/* CodePEn Styling */
+/* Image Styling & Animation Effects */
 #photo {
   animation: blur 5s infinite alternate;
   height: 20vw;
@@ -156,7 +156,7 @@ nav ul li a:hover {
   }
 }
 
-@keyframes mask {
+/* @keyframes mask {
   from {
     -webkit-mask-position: 0% 0;
     mask-position: 0% 0;
@@ -165,7 +165,7 @@ nav ul li a:hover {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
   }
-}
+} */
 
 /* Introduction Text */
 .intro-text {
