@@ -93,7 +93,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 38%;
+    padding-top: 22%;
     align-items: center;
   }
   .skill-image img {
@@ -125,5 +125,279 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 22px;
     border-radius: 10px;
+  }
+}
+/* For Mobile Devices */
+@media screen and (max-width: 425px) {
+  .intro-section {
+    width: 100%;
+    display: flex;
+    padding-top: 15%;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .intro-text {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin-top: 4%;
+    margin-bottom: 8%;
+  }
+  #photo {
+    animation: blur 5s infinite alternate;
+    height: 20vw;
+    position: relative;
+    width: 40vw;
+    margin-bottom: 17%;
+  }
+  #photo div {
+    height: 300px;
+    position: absolute;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    right: -51px;
+    border-radius: 50%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+      rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  }
+  .project {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .project-heading p,
+  h2 {
+    margin: var(--margin);
+    padding: var(--padding);
+    font-family: var(--font-family);
+    text-align: center;
+  }
+  .mw {
+    font-size: 20px;
+    text-align: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 350px;
+    height: 200px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% auto;
+    font-family: var(--font-family);
+  }
+  .whatsapp {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .gmail {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .address {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    font-family: var(--font-family);
+    background: var(--main-bg-color);
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro-section {
+    width: 100%;
+    display: flex;
+    padding-top: 15%;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .intro-text {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin-top: 4%;
+    margin-bottom: 6%;
+  }
+  #photo {
+    animation: blur 5s infinite alternate;
+    height: 20vw;
+    position: relative;
+    width: 40vw;
+    margin-bottom: 25%;
+  }
+  #photo div {
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    right: -25px;
+    border-radius: 50%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+      rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  }
+  .heading p {
+    color: #ac008f;
+    text-align: center;
+  }
+  .skill-section {
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+  .skill-set {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .project {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .project-heading p,
+  h2 {
+    margin: var(--margin);
+    padding: var(--padding);
+    font-family: var(--font-family);
+    text-align: center;
+  }
+  .mw {
+    font-size: 20px;
+    text-align: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 350px;
+    height: 200px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% auto;
+    font-family: var(--font-family);
+  }
+  .whatsapp {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .gmail {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .address {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    font-family: var(--font-family);
+    background: var(--main-bg-color);
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro-section {
+    width: 100%;
+    display: flex;
+    padding-top: 15%;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .intro-text {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin-top: 4%;
+    margin-bottom: 8%;
+  }
+  .skill-section {
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin: 10px;
+  }
+  .skill-description {
+    margin: var(--margin);
+    font-size: 16px;
+  }
+  .project {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .project-heading p,
+  h2 {
+    margin: var(--margin);
+    padding: var(--padding);
+    font-family: var(--font-family);
+    text-align: center;
+  }
+  .mw {
+    font-size: 20px;
+    text-align: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 280px;
+    height: 200px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% auto;
+    font-family: var(--font-family);
+  }
+  .whatsapp {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .gmail {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  .address {
+    transition: 0.3s;
+    margin: 17px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    font-family: var(--font-family);
+    background: var(--main-bg-color);
+    flex-direction: column;
   }
 }

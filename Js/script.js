@@ -7,6 +7,16 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3500,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+    },
 });
 
 // TypeWriter JS Typing Effect For Desc
